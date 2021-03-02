@@ -1,0 +1,200 @@
+/*
+Copyright 2008-2013 Concur Technologies, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain
+a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,300,400,700,500,600);
+////////////////////////////////////////////////////////////////////////////////
+// CUSTOMIZE SLATE
+////////////////////////////////////////////////////////////////////////////////
+// Use these settings to help adjust the appearance of Slate
+$gray50: #f7fafc;
+$gray100: #e3e8ee;
+$gray200: #c1c9d2;
+$gray300: #a3acb9;
+$gray400: #8792a2;
+$gray500: #697386;
+$gray600: #4f566b;
+$gray700: #3c4257;
+$gray800: #2a2f45;
+$gray900: #1a1f36;
+$blue50: #f5fbff;
+$blue100: #d6ecff;
+$blue200: #a4cdfe;
+$blue300: #7dabf8;
+$blue400: #6c8eef;
+$blue500: #556cd6;
+$blue600: #3d4eac;
+$blue700: #2f3d89;
+$blue800: #212d63;
+$blue900: #131f41;
+$cyan50: #edfdfd;
+$cyan100: #c4f1f9;
+$cyan200: #7fd3ed;
+$cyan300: #4db7e8;
+$cyan400: #3a97d4;
+$cyan500: #067ab8;
+$cyan600: #075996;
+$cyan700: #06457a;
+$cyan800: #093353;
+$cyan900: #042235;
+$green50: #efffed;
+$green100: #cbf4c9;
+$green200: #85d996;
+$green300: #33c27f;
+$green400: #1ea672;
+$green500: #09825d;
+$green600: #0e6245;
+$green700: #0d4b3b;
+$green800: #0b3733;
+$green900: #082429;
+$yellow50: #fcf9e9;
+$yellow100: #f8e5b9;
+$yellow200: #efc078;
+$yellow300: #e5993e;
+$yellow400: #d97917;
+$yellow500: #bb5504;
+$yellow600: #983705;
+$yellow700: #762b0b;
+$yellow800: #571f0d;
+$yellow900: #3a1607;
+$orange50: #fffaee;
+$orange100: #fee3c0;
+$orange200: #f8b886;
+$orange300: #f5925e;
+$orange400: #e56f4a;
+$orange500: #c44c34;
+$orange600: #9e2f28;
+$orange700: #7e1e23;
+$orange800: #5d161b;
+$orange900: #420e11;
+$red50: #fff8f5;
+$red100: #fde2dd;
+$red200: #fbb5b2;
+$red300: #fa8389;
+$red400: #ed5f74;
+$red500: #cd3d64;
+$red600: #a41c4e;
+$red700: #80143f;
+$red800: #5e1039;
+$red900: #420828;
+$purple50: #fff8fe;
+$purple100: #fce0f6;
+$purple200: #f0b4e4;
+$purple300: #e28ddc;
+$purple400: #c96ed0;
+$purple500: #a450b5;
+$purple600: #7b3997;
+$purple700: #5b2b80;
+$purple800: #401d6a;
+$purple900: #2d0f55;
+$violet50: #f8f9fe;
+$violet100: #e6e6fc;
+$violet200: #c7c2ea;
+$violet300: #b0a1e1;
+$violet400: #9c82db;
+$violet500: #8260c3;
+$violet600: #61469b;
+$violet700: #4b3480;
+$violet800: #352465;
+$violet900: #1f184e;
+
+
+// BACKGROUND COLORS
+////////////////////
+$nav-bg: $gray900 ;
+$examples-bg: $gray800 !default;
+$code-bg: $gray600 !default;
+$code-annotation-bg: $gray800 !default;
+$nav-subitem-bg: $gray700 !default;
+$nav-active-bg: $gray800 !default;
+$nav-active-parent-bg: #1E2224 !default; // parent links of the current section
+$lang-select-border: #000 !default;
+$lang-select-bg: $gray900  !default;
+$lang-select-active-bg: $gray800  !default; // feel free to change this to blue or something
+$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
+$main-bg: $gray900 !default;
+$aside-notice-bg: #8fbcd4 !default;
+$aside-warning-bg: #c97a7e !default;
+$aside-success-bg: #6ac174 !default;
+$search-notice-bg: #c97a7e !default;
+
+
+// TEXT COLORS
+////////////////////
+$main-text: #333 !default; // main content text color
+$nav-text: $gray500 !default;
+$nav-active-text: $blue400 !default;
+$nav-active-parent-text: $gray100  !default; // parent links of the current section
+$lang-select-text: #fff !default; // color of unselected language tab text
+$lang-select-active-text: #fff !default; // color of selected language tab text
+$lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
+$GET : $green400;
+$POST : $cyan400;
+$DELETE :$red400;
+// SIZES
+////////////////////
+$nav-width: 230px !default; // width of the navbar
+$examples-width: 50% !default; // portion of the screen taken up by code examples
+$logo-margin: 0px !default; // margin below logo
+$main-padding: 28px !default; // padding to left and right of content & examples
+$nav-padding: 15px !default; // padding to left and right of navbar
+$nav-v-padding: 10px !default; // padding used vertically around search boxes and results
+$nav-indent: 10px !default; // extra padding for ToC subitems
+$code-annotation-padding: 13px !default; // padding inside code annotations
+$h1-margin-bottom: 21px !default; // padding under the largest header tags
+$tablet-width: 930px !default; // min width before reverting to tablet size
+$phone-width: $tablet-width - $nav-width !default; // min width before reverting to mobile size
+
+
+
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;
+$open-sans: 'Open Sans', sans-serif;
+
+
+// FONTS
+////////////////////
+%default-font {
+  font-family:$open-sans;
+  font-size: 14px;
+}
+
+%header-font {
+  @extend %default-font;
+  font-weight: bold;
+}
+
+%code-font {
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+// OTHER
+////////////////////
+$nav-footer-border-color: $gray500 !default;
+$search-box-border-color: $gray500 !default;
+
+
+////////////////////////////////////////////////////////////////////////////////
+// INTERNAL
+////////////////////////////////////////////////////////////////////////////////
+// These settings are probably best left alone.
+
+%break-words {
+    word-break: break-all;
+    hyphens: auto;
+}
