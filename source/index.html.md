@@ -69,7 +69,7 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 
 # Asset
 
-Use the Asset call to do things with an asset, these can be get,put,post,delete
+Use the Asset call to do things with an asset, these can be GET,PUT,POST,DELETE 
 
 ## Assets 
 
